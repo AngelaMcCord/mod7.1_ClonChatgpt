@@ -22,12 +22,12 @@ export default function History() {
   };
 
   return (
-    <div className="flex flex-col h-screen w-64 bg-gray-900 text-white p-4">
+    <div className="flex flex-col h-screen w-64 bg-rose-300 text-white p-4">
       <div className="flex flex-col items-start">
         <span className="mb-4">Logo</span>
         <div className="p-1 mt-4">
           <button            
-            className="flex p-2 bg-blue-600 rounded-lg w-full hover:bg-blue-700 cursor-pointer"
+            className="flex p-2 bg-rose-400 rounded-lg w-full hover:bg-rose-400 cursor-pointer"
             onClick={() => saveHistory()}
           >
             <NewChatIcon />
@@ -38,7 +38,7 @@ export default function History() {
       <div className="flex-1 overflow-y-auto mt-4 mb-4">
         <ul className="space-y-2 text-sm mt-4">
           {hook?.state?.messages?.map((msg, index) => (
-            <li key={index} className="p-2 bg-gray-800 rounded-lg">
+            <li key={index} className="p-2 bg-rose-700 rounded-lg">
               {msg.title}
             </li>
           ))}
